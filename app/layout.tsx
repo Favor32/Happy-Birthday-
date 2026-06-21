@@ -14,9 +14,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-cream min-h-screen flex">
+      <body className="bg-cream min-h-screen">
         <Navbar />
-        <div className="ml-56 flex-1 min-h-screen">
+        {/* Desktop: push content right of sidebar. Mobile: push content below top bar */}
+        <div className="md:ml-56 pt-16 md:pt-0 min-h-screen">
           {children}
         </div>
       </body>
