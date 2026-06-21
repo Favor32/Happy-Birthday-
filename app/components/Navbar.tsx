@@ -52,7 +52,7 @@ export default function Navbar() {
         <div className="flex items-center gap-2">
           <p className="text-xl">🎂</p>
           <p className="font-heading text-cream text-sm font-bold">
-            Coach Salem
+             Salem
           </p>
         </div>
         <button
