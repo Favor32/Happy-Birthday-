@@ -33,6 +33,25 @@ export default function MessagesPage() {
     setLoading(false);
   }
 
+  // Delete a message
+  async function handleDelete(id: string) {
+    const password = prompt("Enter password to delete this message:");
+    if (password !== "123456") {
+      alert("Wrong password!");
+      return;
+    }
+
+    const { error } = await supabase
+      .from("messages")
+      .delete()
+      .eq("id", id);
+
+    if (error) {
+      console.error("Error deleting message:", error);
+    } else {
+      await loadMessages();
+    }
+  }
   // Submit a new message
   async function handleSubmit() {
     if (!name.trim() || !message.trim()) return;
@@ -59,10 +78,10 @@ export default function MessagesPage() {
   return (
     <main className="min-h-screen bg-cream flex flex-col items-center py-16 px-8">
       <h1 className="font-heading text-4xl font-bold text-brown text-center">
-        Messages for Coach Salem 💌
+        Messages for Bro Salem 💌
       </h1>
       <p className="font-body text-brown-light text-center mt-3 max-w-md">
-        Leave a birthday message for Coach Salem and let him know how much he means to you!
+        Leave a birthday message for Bro Salem and let him know how much he means to you!
       </p>
 
       {/* Message Form */}
@@ -109,9 +128,10 @@ export default function MessagesPage() {
           </p>
         ) : (
           messages.map((msg) => (
+            messages.map((msg) => (
             <div
               key={msg.id}
-              className="bg-white rounded-2xl shadow-sm p-6 border-l-4 border-gold"
+              className="bg-white rounded-2xl shadow-sm p-6 border-l-4 border-gold relative"
             >
               <p className="font-body text-brown-light text-sm font-bold uppercase tracking-wide">
                 {msg.name}
@@ -119,7 +139,14 @@ export default function MessagesPage() {
               <p className="font-body text-brown mt-2 leading-relaxed">
                 {msg.message}
               </p>
+              <button
+                onClick={() => handleDelete(msg.id)}
+                className="absolute top-4 right-4 text-brown-light hover:text-red-500 transition-colors duration-300 text-lg"
+              >
+                🗑️
+              </button>
             </div>
+          ))
           ))
         )}
       </div>

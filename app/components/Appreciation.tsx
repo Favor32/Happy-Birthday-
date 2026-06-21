@@ -3,12 +3,11 @@
 import { useEffect, useState } from "react";
 
 const lines = [
-  "Coach Salem, thank you for everything you do.",
+  "Bro Salem, thank you for everything you do.",
   "Your dedication and patience inspire everyone around you.",
   "Your passion pushes us to be better every single day.",
-  "Today we celebrate you —",
-  "not just as a coach, but as an amazing person.",
-  "Happy Birthday! 🎂",
+  "Today we appreciate you ",
+  "God bless and keep you🙏"
 ];
 
 export default function Appreciation() {

@@ -6,7 +6,7 @@ const wishes = [
   {
     emoji: "🎂",
     front: "A Wish For You",
-    back: "May this birthday mark the beginning of a year filled with joy, laughter, and every blessing you deserve, Coach Salem!",
+    back: "May this birthday mark the beginning of a year filled with joy, laughter, and every blessing you deserve, Bro Salem!",
   },
   {
     emoji: "🙏",
@@ -16,12 +16,12 @@ const wishes = [
   {
     emoji: "💪",
     front: "For The Coach",
-    back: "Your dedication and passion inspire us every single day. Thank you for pushing us to be better. Happy Birthday Coach Salem!",
+    back: "Your dedication and passion inspire us every single day. Thank you for pushing us to be better. Happy Birthday Bro Salem!",
   },
   {
     emoji: "🌟",
     front: "You Are A Star",
-    back: "The world is brighter because you are in it. Keep shining, Coach Salem. Wishing you an extraordinary year ahead!",
+    back: "The world is brighter because you are in it. Keep shining, Bro Salem. Wishing you an extraordinary year ahead!",
   },
   {
     emoji: "💛",
@@ -31,7 +31,7 @@ const wishes = [
   {
     emoji: "🎉",
     front: "Celebrate Today",
-    back: "Today is your day Coach Salem! Forget everything else and just enjoy every single moment of your special day!",
+    back: "Today is your day Bro Salem! Forget everything else and just enjoy every single moment of your special day!",
   },
 ];
 

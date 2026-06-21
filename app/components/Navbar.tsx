@@ -21,7 +21,7 @@ export default function Navbar() {
         <div className="text-center">
           <p className="text-4xl">🎂</p>
           <p className="font-heading text-cream text-lg font-bold mt-2 leading-tight">
-            Coach Salem
+             Salem
           </p>
           <p className="font-body text-gold text-xs mt-1 tracking-widest uppercase">
             Happy Birthday

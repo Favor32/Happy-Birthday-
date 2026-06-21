@@ -35,7 +35,7 @@ export default function GalleryPage() {
         Gallery 📸
       </h1>
       <p className="font-body text-brown-light text-center mt-3 max-w-md">
-        A few moments with the one and only Coach Salem!
+        A few moments with the one and only Bro Salem!
       </p>
 
       <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-4xl">
@@ -64,7 +64,7 @@ export default function GalleryPage() {
               />
               <div className="bg-white px-6 py-4">
                 <p className="font-heading text-brown text-lg font-bold">
-                  Coach Salem 🎂
+                  Bro Salem 🎂
                 </p>
                 <p className="font-body text-brown-light text-sm mt-1">
                   A special moment worth remembering 💛
