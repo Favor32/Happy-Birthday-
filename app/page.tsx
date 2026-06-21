@@ -42,7 +42,7 @@ export default function Home() {
 
       {/* Bottom-right photo */}
       <div
-        className="fixed bottom-6 left-4 md:bottom-6 md:right-6 w-20 h-20 md:w-36 md:h-36 rounded-full overflow-hidden shadow-xl border-4 border-brown z-10"
+        className="fixed bottom-6 left-4 md:bottom-6 md:right-10 w-20 h-20 md:w-36 md:h-36 rounded-full overflow-hidden shadow-xl border-4 border-brown z-10"
        style={{
          opacity: showSecond ? 1 : 0,
          transform: showSecond ? "translateX(0)" : "translateX(150px)",

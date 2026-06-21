@@ -1,5 +1,4 @@
 "use client";
-
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -28,9 +27,7 @@ export default function Navbar() {
             Happy Birthday
           </p>
         </div>
-
         <div className="w-full h-px bg-brown-light mt-2" />
-
         <ul className="flex flex-col w-full gap-2">
           {navLinks.map((link) => (
             <li key={link.href}>
@@ -51,8 +48,8 @@ export default function Navbar() {
       </aside>
 
       {/* Hamburger - mobile only */}
-      <div className="md:hidden fixed top-0 left-0 right-0 bg-brown z-50 flex items-center justify-between px-6 py-4">
-        <div className="flex items-center gap-3">
+      <div className="md:hidden fixed top-0 left-0 right-0 bg-brown z-50 flex items-center justify-between px-4 py-2">
+        <div className="flex items-center gap-2">
           <p className="text-xl">🎂</p>
           <p className="font-heading text-cream text-sm font-bold">
             Coach Salem
@@ -60,7 +57,7 @@ export default function Navbar() {
         </div>
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="text-cream text-3xl focus:outline-none"
+          className="text-cream text-2xl focus:outline-none"
         >
           {menuOpen ? "✕" : "☰"}
         </button>
@@ -68,7 +65,7 @@ export default function Navbar() {
 
       {/* Mobile menu dropdown */}
       {menuOpen && (
-        <div className="md:hidden fixed top-0 left-0 right-0 bg-brown z-50 flex items-center justify-between px-4 py-2">
+        <div className="md:hidden fixed top-12 left-0 right-0 bg-brown z-40 flex flex-col px-4 py-3 gap-2">
           {navLinks.map((link) => (
             <Link
               key={link.href}
