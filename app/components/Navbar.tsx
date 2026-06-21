@@ -53,8 +53,8 @@ export default function Navbar() {
       {/* Hamburger - mobile only */}
       <div className="md:hidden fixed top-0 left-0 right-0 bg-brown z-50 flex items-center justify-between px-6 py-4">
         <div className="flex items-center gap-3">
-          <p className="text-2xl">🎂</p>
-          <p className="font-heading text-cream text-base font-bold">
+          <p className="text-xl">🎂</p>
+          <p className="font-heading text-cream text-sm font-bold">
             Coach Salem
           </p>
         </div>
@@ -68,7 +68,7 @@ export default function Navbar() {
 
       {/* Mobile menu dropdown */}
       {menuOpen && (
-        <div className="md:hidden fixed top-16 left-0 right-0 bg-brown z-40 flex flex-col px-6 py-4 gap-3">
+        <div className="md:hidden fixed top-0 left-0 right-0 bg-brown z-50 flex items-center justify-between px-4 py-2">
           {navLinks.map((link) => (
             <Link
               key={link.href}
