@@ -152,7 +152,7 @@ export default function WishesPage() {
         Wishes & Prayers 🙏
       </h1>
       <p className="font-body text-brown-light text-center mt-3 max-w-md relative z-10">
-        Tap each card to reveal a special wish for Coach Salem!
+        Tap each card to reveal a special wish for Bro Salem!
       </p>
 
       <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-4xl relative z-10">
